@@ -15,8 +15,10 @@ public class Graph<T> {
     public void createEdge(Vertex<T> a, Vertex<T> b) {
         // добавляем их друг друга в их списки смежности
         // ВАШ КОД
-        a.setAdjacent(b);
-        b.setAdjacent(a);
+        List<Vertex> adjacentA = a.getAdjacent();
+        List<Vertex> adjacentB = b.getAdjacent();
+        adjacentA.add(b);
+        adjacentB.add(a);
     }
 
     public boolean isConnected(Vertex<T> a, Vertex<T> b) {
