@@ -27,7 +27,4 @@ public class Vertex<T> {
         return Objects.hash(value);
     }
 
-    public void setAdjacent(List<Vertex> adjacent) {
-        this.adjacent = adjacent;
-    }
 }
