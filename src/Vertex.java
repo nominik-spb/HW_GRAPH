@@ -14,10 +14,6 @@ public class Vertex<T> {
         return adjacent;
     }
 
-    public void setAdjacent(Vertex<T> v) {
-        adjacent.add(v);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
